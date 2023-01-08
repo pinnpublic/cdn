@@ -1,6 +1,6 @@
 # Example CDN
 
-This is a class repository.
+This is a class library repository.
 
 ## CDN URL
 
