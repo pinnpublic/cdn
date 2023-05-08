@@ -14,5 +14,8 @@ full version
 &lt;link rel="stylesheet" href="https://me2.do/xmPHeA6J"&gt;
 -->
 
+## Google Icons
+
+https://fonts.google.com/icons
 
 
