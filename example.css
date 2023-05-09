@@ -40,7 +40,7 @@ h1, h2, h3 {
 }
 
 body > div {
-	padding: 1rem;
+	padding: 0.5rem 1rem;
 }
 
 
@@ -51,11 +51,11 @@ h3 { font-size: 1.2rem; }
 
 form {
 	display: block;
-	margin: 1rem;
+	/* margin: 1rem; */
 }
 
 form > div {
-	margin: 10px 0;
+	margin: 0.5rem 1rem;
 }
 
 input, textarea, button, select {
@@ -142,6 +142,8 @@ button .material-symbols-outlined {
 table {
 	border-collapse: collapse;	
 	margin: 1rem;
+	box-sizing: border-box;
+	width: 768px;
 }
 
 table th, table td {
@@ -155,11 +157,11 @@ table th {
 }
 
 table.horizontal {
-	width: 768px;
+	/* width: 768px; */
 }
 
 table.vertical {
-	width: 768px;
+	/* width: 768px; */
 }
 
 table.vertical th {
@@ -185,14 +187,14 @@ a:hover {
 hr {
 	border: 0;
 	border-top: 1px solid #CCC;
-	margin: 3rem 0;
+	margin: 2rem 0;
 }
 
 .panel {
 	border: 1px solid #CCC;
 	background-color: #EFEFEF;
 	margin: 1rem;
-	width: 300px;
+	width: auto;
 }
 
 .panel[title]::before {
@@ -212,7 +214,7 @@ hr {
 }
 
 .panel.full {
-	width: auto;
+	width: 100%;
 }
 
 .badge {
