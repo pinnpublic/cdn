@@ -65,6 +65,9 @@ input, textarea, button, select {
 	resize: none;
 	padding: 7px;	
 	margin: 0;
+}
+
+input[type=text], input[type=password], textarea, button, select {
 	width: 300px;
 }
 
