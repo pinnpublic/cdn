@@ -28,6 +28,14 @@ body {
 	padding-bottom: 120px;
 }
 
+body.wide {
+	width: 1200px;
+}
+
+body.narrow {
+	width: 500px;
+}
+
 body, p, div, span, a, input, select, option, textarea, button, table, th, td {
 	font-family: 'GmarketSansMedium';
 	color: #777;
@@ -35,7 +43,7 @@ body, p, div, span, a, input, select, option, textarea, button, table, th, td {
 
 h1, h2, h3 {
 	font-family: 'GmarketSansMedium';
-	color: #555;
+	color: #666;
 	padding: 0 1rem;	
 }
 
@@ -49,9 +57,26 @@ h1 small { font-size: 1.2rem; color: #777; }
 h2 { font-size: 1.5rem; border-bottom: 1px dashed #CCC; }
 h3 { font-size: 1.2rem; }
 
-h1.dog::before {
-	content: '🐶';
-	margin-right: 5px;
+h1.main::before {
+	font-family: 'Material Symbols Outlined';
+  	content: '\e666';
+  	margin-right: 7px;
+  	float: left;
+}
+
+h1.sub::before {
+	font-family: 'Material Symbols Outlined';
+  	content: '\ea19';
+  	margin-right: 7px;
+  	float: left;
+}
+
+
+h1.page::before {
+	font-family: 'Material Symbols Outlined';
+  	content: '\e0e0';
+  	margin-right: 7px;
+  	float: left;
 }
 
 form {
@@ -65,7 +90,7 @@ form > div {
 
 input, textarea, button, select {
 	border: 1px solid #BBB;
-	border-radius: 1px;
+	border-radius: 3px;
 	outline: none;
 	resize: none;
 	padding: 7px;	
@@ -73,15 +98,16 @@ input, textarea, button, select {
 }
 
 input[type=text], input[type=password], textarea, button, select {
-	width: 300px;
+	/* width: 300px; */
 }
 
 textarea {
+	display: block;
 	height: 100px;
 }
 
 input[type=button], input[type=submit], button {
-	width: inherit;
+	/* width: inherit; */
 }
 
 input.short, textarea.short, button.short, select.short {
@@ -89,11 +115,11 @@ input.short, textarea.short, button.short, select.short {
 }
 
 input.long, textarea.long, button.long, select.long {
-	width: 500px;
+	width: 350px;
 }
 
 input.full, textarea.full, button.full, select.full {
-	width: 98%;
+	width: calc(100% - 16px);
 }
 
 textarea.short {
@@ -120,14 +146,14 @@ input[type=button], input[type=submit], button {
 }
 
 input[type=button].primary, input[type=submit].primary, button.primary {
-	background-color: rgba(100, 149, 237, .2);
+	/* background-color: rgba(100, 149, 237, .2); */
+	background-color: #DEDEDE;
 }
 
 input[type=button].primary:hover, input[type=submit].primary:hover, button.primary:hover {
-	background-color: rgba(100, 149, 237, .3);
-	
+	/* background-color: rgba(100, 149, 237, .3); */
+	background-color: #EFEFEF;
 }
-
 
 input[type=button]:hover, input[type=submit]:hover, button:hover {
 	background-color: #DEDEDE;
@@ -147,11 +173,129 @@ button .material-symbols-outlined {
 }
 
 
+button.add::before {
+	font-family: 'Material Symbols Outlined';
+  	content: '\e746';
+	position: absolute;
+	left: 11px;
+	top: 3px;
+	font-size: 1.25rem;
+}
+
+button.back::before {
+	font-family: 'Material Symbols Outlined';
+  	content: '\e166';
+	position: absolute;
+	left: 11px;
+	top: 3px;
+	font-size: 1.25rem;
+}
+
+button.list::before {
+	font-family: 'Material Symbols Outlined';
+  	content: '\e0ee';
+	position: absolute;
+	left: 11px;
+	top: 3px;
+	font-size: 1.25rem;
+}
+
+
+button.del::before {
+	font-family: 'Material Symbols Outlined';
+  	content: '\e872';
+	position: absolute;
+	left: 11px;
+	top: 3px;
+	font-size: 1.25rem;
+}
+
+
+button.edit::before {
+	font-family: 'Material Symbols Outlined';
+  	content: '\e745';
+	position: absolute;
+	left: 11px;
+	top: 3px;
+	font-size: 1.25rem;
+}
+
+
+button.login::before {
+	font-family: 'Material Symbols Outlined';
+  	content: '\ea77';
+	position: absolute;
+	left: 11px;
+	top: 3px;
+	font-size: 1.25rem;
+}
+
+
+button.logout::before {
+	font-family: 'Material Symbols Outlined';
+  	content: '\e9ba';
+	position: absolute;
+	left: 11px;
+	top: 3px;
+	font-size: 1.25rem;
+}
+
+
+button.in::before {
+	font-family: 'Material Symbols Outlined';
+  	content: '\f71a';
+	position: absolute;
+	left: 11px;
+	top: 3px;
+	font-size: 1.25rem;
+}
+
+
+button.out::before {
+	font-family: 'Material Symbols Outlined';
+  	content: '\f70e';
+	position: absolute;
+	left: 11px;
+	top: 3px;
+	font-size: 1.25rem;
+}
+
+
+button.reply::before {
+	font-family: 'Material Symbols Outlined';
+  	content: '\e15e';
+	position: absolute;
+	left: 11px;
+	top: 3px;
+	font-size: 1.25rem;
+}
+
+
+button.comment::before {
+	font-family: 'Material Symbols Outlined';
+  	content: '\e0b9';
+	position: absolute;
+	left: 11px;
+	top: 3px;
+	font-size: 1.25rem;
+}
+
+
+button::before {
+	font-family: 'Material Symbols Outlined';
+  	content: '\e323';
+	position: absolute;
+	left: 11px;
+	top: 3px;
+	font-size: 1.25rem;
+}
+
+
 table {
 	border-collapse: collapse;	
 	margin: 1rem;
 	box-sizing: border-box;
-	width: 768px;
+	width: calc(100% - 32px);
 }
 
 table th, table td {
@@ -172,12 +316,21 @@ table.vertical {
 	/* width: 768px; */
 }
 
-table.vertical th {
+form > table {
+	margin: 0;
+	width: 100%;
+}
+
+form > table th {
 	width: 120px;
 }
 
-table.vertical td {
+form > table td {
 	width: 648px;
+}
+
+body.narrow form > table td {
+	width: 348px;
 }
 
 p {
@@ -253,9 +406,4 @@ hr {
 .badge.blue {
 	text-shadow: 0 0 7px cornflowerblue;
 }
-
-
-
-
-
 
