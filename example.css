@@ -49,13 +49,18 @@ h1 small { font-size: 1.2rem; color: #777; }
 h2 { font-size: 1.5rem; border-bottom: 1px dashed #CCC; }
 h3 { font-size: 1.2rem; }
 
+h1.dog::before {
+	content: '🐶';
+	margin-right: 5px;
+}
+
 form {
 	display: block;
-	/* margin: 1rem; */
+	margin: 1rem;
 }
 
 form > div {
-	margin: 0.5rem 1rem;
+	margin: 0.5rem 0;
 }
 
 input, textarea, button, select {
@@ -248,7 +253,6 @@ hr {
 .badge.blue {
 	text-shadow: 0 0 7px cornflowerblue;
 }
-
 
 
 
