@@ -11,6 +11,21 @@
     font-style: normal;
 }
 
+/* @font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+} */
+
+
+/* @font-face {
+    font-family: 'Jal_Haru';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Haru.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
 
 html, body {
 	margin: 0;
@@ -38,7 +53,9 @@ body.narrow {
 	width: 500px;
 }
 
-body, p, div, span, a, input, select, option, textarea, button, table, th, td {
+
+
+body, p, div, span, a, input, select, option, textarea, button, table, th, td, label, fieldset, legend {
 	font-family: 'GmarketSansMedium';
 	color: #555;
 }
@@ -47,47 +64,58 @@ h1, h2, h3 {
 	font-family: 'GmarketSansMedium';
 	color: #444;
 	padding: 0 1rem;	
+	padding-top: .5rem;
 }
 
 body > div {
-	padding: 0.5rem 1rem;
+	padding: 0.3rem 1rem;
 }
 
 
 h1 { font-size: 2rem; border-bottom: 1px solid #CCC; }
 h1 small { font-size: 1.2rem; color: #666; }
 h2 { font-size: 1.5rem; border-bottom: 1px dashed #CCC; }
+h2 small { font-size: 1.1rem; color: #777; }
 h3 { font-size: 1.2rem; }
+h3 small { font-size: 1rem; color: #777; }
+
+
+
 
 h1.main::before {
 	font-family: 'Material Symbols Outlined';
   	content: '\e666';
-  	margin-right: 7px;
+  	margin-right: 10px;
   	float: left;
+	font-size: 2.5rem;
+	/* transform: translate(0, -9px); */
 }
 
 h1.sub::before {
 	font-family: 'Material Symbols Outlined';
   	content: '\ea19';
-  	margin-right: 7px;
+  	margin-right: 10px;
   	float: left;
+	font-size: 2.5rem;
+	/* transform: translate(0, -9px); */
 }
 
 
 h1.page::before {
 	font-family: 'Material Symbols Outlined';
   	content: '\e0e0';
-  	margin-right: 7px;
+  	margin-right: 10px;
   	float: left;
+	font-size: 2.5rem;
+	/* transform: translate(0, -9px); */
 }
 
 form {
 	display: block;
-	margin: 1rem;
 }
 
 form > div {
-	margin: 0.5rem 0;
+	padding: 0.3rem 1rem;
 }
 
 input, textarea, button, select {
@@ -97,6 +125,16 @@ input, textarea, button, select {
 	resize: none;
 	padding: 7px;	
 	margin: 0;
+}
+
+input[type=text]:read-only, textarea:read-only {
+	cursor: not-allowed;
+	background-color: #FFF;
+}
+
+input[type=text]:disabled, textarea:disabled {
+	cursor: not-allowed;
+	background-color: #EEE;
 }
 
 input[type=text], input[type=password], textarea, button, select {
@@ -180,7 +218,7 @@ button.add::before {
   	content: '\e746';
 	position: absolute;
 	left: 11px;
-	top: 3px;
+	top: 4px;
 	font-size: 1.25rem;
 }
 
@@ -189,7 +227,7 @@ button.back::before {
   	content: '\e166';
 	position: absolute;
 	left: 11px;
-	top: 3px;
+	top: 4px;
 	font-size: 1.25rem;
 }
 
@@ -198,7 +236,7 @@ button.list::before {
   	content: '\e0ee';
 	position: absolute;
 	left: 11px;
-	top: 3px;
+	top: 4px;
 	font-size: 1.25rem;
 }
 
@@ -208,7 +246,7 @@ button.del::before {
   	content: '\e872';
 	position: absolute;
 	left: 11px;
-	top: 3px;
+	top: 4px;
 	font-size: 1.25rem;
 }
 
@@ -218,7 +256,7 @@ button.edit::before {
   	content: '\e745';
 	position: absolute;
 	left: 11px;
-	top: 3px;
+	top: 4px;
 	font-size: 1.25rem;
 }
 
@@ -228,7 +266,7 @@ button.login::before {
   	content: '\ea77';
 	position: absolute;
 	left: 11px;
-	top: 3px;
+	top: 4px;
 	font-size: 1.25rem;
 }
 
@@ -238,7 +276,7 @@ button.logout::before {
   	content: '\e9ba';
 	position: absolute;
 	left: 11px;
-	top: 3px;
+	top: 4px;
 	font-size: 1.25rem;
 }
 
@@ -248,7 +286,7 @@ button.in::before {
   	content: '\f71a';
 	position: absolute;
 	left: 11px;
-	top: 3px;
+	top: 4px;
 	font-size: 1.25rem;
 }
 
@@ -258,7 +296,7 @@ button.out::before {
   	content: '\f70e';
 	position: absolute;
 	left: 11px;
-	top: 3px;
+	top: 4px;
 	font-size: 1.25rem;
 }
 
@@ -268,7 +306,7 @@ button.reply::before {
   	content: '\e15e';
 	position: absolute;
 	left: 11px;
-	top: 3px;
+	top: 4px;
 	font-size: 1.25rem;
 }
 
@@ -278,7 +316,7 @@ button.comment::before {
   	content: '\e0b9';
 	position: absolute;
 	left: 11px;
-	top: 3px;
+	top: 4px;
 	font-size: 1.25rem;
 }
 
@@ -288,7 +326,7 @@ button::before {
   	content: '\e323';
 	position: absolute;
 	left: 11px;
-	top: 3px;
+	top: 4px;
 	font-size: 1.25rem;
 }
 
@@ -310,32 +348,32 @@ table th {
 	background-color: #EFEFEF;
 }
 
-table.horizontal {
-	/* width: 768px; */
+table.vertical th {
+	width: 150px;
 }
 
-table.vertical {
-	/* width: 768px; */
+table.vertical td {
+	width: calc(100% - 182px);
+	padding-left: 10px;
 }
 
-/*
-form > table {
-	margin: 0;
-	width: 100%;
+body.narrow table.vertical th {
+	width: 100px;
 }
 
-form > table th {
-	width: 120px;
+body.narrow table.vertical td {
+	width: calc(100% - 182px);
 }
 
-form > table td {
-	width: 648px;
-}
-*/
 
-body.narrow form > table td {
-	width: 348px;
+table + table {
+	margin-top: 30px;
 }
+
+
+
+
+
 
 p {
 	padding: 0 1rem;
@@ -378,9 +416,6 @@ hr {
 	width: 500px;
 }
 
-.panel.full {
-	width: 100%;
-}
 
 .badge {
 	float: right;
@@ -411,3 +446,101 @@ hr {
 	text-shadow: 0 0 7px cornflowerblue;
 }
 
+
+
+
+label + label {
+	margin-left: 7px;
+}
+
+label input[type=checkbox], label input[type=radio] {
+	transform: translate(0, 1px);
+}
+
+
+
+.group {
+	display: flex;
+}
+
+.group label {
+	border: 1px solid #BBB;
+	border-radius: 3px;
+	outline: none;
+	resize: none;
+	padding: 7px 14px;
+	margin: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	background-color: #EFEFEF;
+	white-space: nowrap;
+	font-size: 14px;
+}
+
+
+.group input[type=text] {
+	margin-left: -1px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.group input.full[type=text] {
+	margin-left: -1px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	width: 100%;
+}
+
+.group input[type=button]:first-child, .group button:first-child {
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	margin-left: 0px;
+}
+
+.group input[type=button], .group button {
+	border-radius: 0;
+	margin-left: -1px;
+}
+
+.group input[type=button]:last-child, .group button:last-child {
+	margin-left: -1px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+
+.seperate {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+
+
+div.list {
+	width: max-content;
+	margin: 1rem;
+	border: 1px solid #BBB;
+	border-radius: 3px;
+	padding: 0;
+}
+
+div.list.full {
+	width: auto;
+	display: block;
+	margin: 1rem;
+	border: 1px solid #BBB;
+	border-radius: 3px;
+	padding: 0;
+}
+
+div.list > div {
+	padding: .5rem 1rem;
+	margin: 0;
+	border-bottom: 1px solid #BBB;
+}
+
+div.list > div:last-child {
+	border-bottom: 0;
+}
