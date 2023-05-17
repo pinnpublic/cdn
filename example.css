@@ -549,5 +549,9 @@ div.list > div:last-child {
 
 pre.code {
 	font-family: consols;
+	background-color: rgba(150, 150, 150, .1);
+	border: 1px solid #BBB;
+	border-radius: 3px;
 	padding: 1rem;
+	margin: 1rem;	
 }
