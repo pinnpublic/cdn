@@ -40,12 +40,12 @@ body.narrow {
 
 body, p, div, span, a, input, select, option, textarea, button, table, th, td {
 	font-family: 'GmarketSansMedium';
-	color: #777;
+	color: #555;
 }
 
 h1, h2, h3 {
 	font-family: 'GmarketSansMedium';
-	color: #666;
+	color: #444;
 	padding: 0 1rem;	
 }
 
@@ -55,7 +55,7 @@ body > div {
 
 
 h1 { font-size: 2rem; border-bottom: 1px solid #CCC; }
-h1 small { font-size: 1.2rem; color: #777; }
+h1 small { font-size: 1.2rem; color: #666; }
 h2 { font-size: 1.5rem; border-bottom: 1px dashed #CCC; }
 h3 { font-size: 1.2rem; }
 
