@@ -2,6 +2,8 @@
 
 This is a class library repository.
 
+<br>
+
 ## CDN
 
 Copy the following code and add it to the &lt;head&gt; tag of your html document.
