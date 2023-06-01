@@ -91,3 +91,18 @@ full version
 메인 버튼에 색상을 지정할 수 있다. 대상: `<input type="button">`, `<input type="submit">`, `<button>`
 
 - `<input type="button" class="primary">`
+
+이미지 버튼
+
+- `<button>버튼</button>`
+- `<button class="in">회원가입</button>`
+- `<button class="out">회원탈퇴</button>`
+- `<button class="login">로그인</button>`
+- `<button class="logout">로그아웃</button>`
+- `<button class="add">쓰기</button>`
+- `<button class="back">돌아가기</button>`
+- `<button class="list">목록보기</button>`
+- `<button class="del">삭제하기</button>`
+- `<button class="edit">수정하기</button>`
+- `<button class="reply">답변하기</button>`
+- `<button class="comment">댓글달기</button>`
