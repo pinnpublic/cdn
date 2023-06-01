@@ -147,7 +147,7 @@ full version
 ```
 <div class="group">
     <label>아이디</label>
-	<input type="text">
+    <input type="text">
 </div>
 ```
 
