@@ -14,13 +14,13 @@ full version
 &lt;link rel="stylesheet" href="https://me2.do/xmPHeA6J"&gt;
 -->
 
-<br><br>
+<br>
 
 ## Google Icons
 
 [link] https://fonts.google.com/icons
 
-<br><br>
+<br>
 
 ## Usage
 
