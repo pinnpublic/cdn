@@ -32,7 +32,7 @@ full version
 - 웹 폰트 기본 적용(GmarketSansMedium)
 - 문서는 특정 너비(narrow(500px), default(800px), wide(1200px))의 중앙 정렬을 한다.
 
-### `<body>`
+### &lt;body&gt;
 
 문서의 너비를 조절한다.
 
