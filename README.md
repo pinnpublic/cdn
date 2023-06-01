@@ -63,11 +63,17 @@ full version
 
 ### Heading
 
-- `<h1>Title</h1>`
-- `<h1>Title <sub>Sub Title</sub></h1>`
+- 1단계 제목
+    - `<h1>Title</h1>`
+    - `<h1>Title <sub>Sub Title</sub></h1>`
+- 2단계 제목
+    - `<h2>Title</h2>`
+    - `<h2>Title <sub>Sub Title</sub></h2>`
+- 3단계 제목
+    - `<h3>Title</h3>`
+    - `<h3>Title <sub>Sub Title</sub></h3>`
 
-- `<h2>Title</h2>`
-- `<h2>Title <sub>Sub Title</sub></h2>`
-
-- `<h3>Title</h3>`
-- `<h3>Title <sub>Sub Title</sub></h3>`
+1단계 제목에는 아이콘을 삽입할 수 있다.
+- `<h1 class="main">Title</h1>` : 메인 페이지
+- `<h1 class="sub">Title</h1>` : 서브 페이지
+- `<h1 class="page">Title</h1>` : 일반 페이지
