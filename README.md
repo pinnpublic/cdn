@@ -109,9 +109,15 @@ full version
 <input type="text" name="tel" class="full" placeholder="주소 입력">
 ```
 
-메인 버튼에 색상을 지정할 수 있다. 대상: `<input type="button">`, `<input type="submit">`, `<button>`
+메인 버튼에 색상을 지정할 수 있다. 
 
-- `<input type="button" class="primary">`
+- `<input type="button">`
+- `<input type="submit">`
+- `<button>`
+
+```
+<input type="button" class="primary">
+```
 
 이미지 버튼
 
@@ -130,8 +136,9 @@ full version
 
 테이블
 
-- 기본 설정 : 테두리, 너비(100%)
-- `<th>` : background color(#EFEFEF)
+- 테두리(1px)
+- 너비(100%)
+- header : background color(#EFEFEF)
 
 ```
 <table>
