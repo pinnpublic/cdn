@@ -1,9 +1,7 @@
 @charset "UTF-8";
 
-/* 구글 아이콘 */
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
-/* 웹폰트 */
 @font-face {
     font-family: 'GmarketSansMedium';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
@@ -11,21 +9,19 @@
     font-style: normal;
 }
 
-/* @font-face {
-    font-family: 'LINESeedKR-Bd';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-} */
-
-
-/* @font-face {
-    font-family: 'Jal_Haru';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Haru.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-} */
-
+:root {
+	--text-color: #555; 
+	--sub-text-color: #777; 
+	--back-color: #EFEFEF;
+	--header-color: #444;
+	--primary-color: #DEDEDE;
+	--secondary-color: #EFEFEF;
+	--default-width: 800px;
+	--narrow-width: 500px;
+	--wide-width: 1200px;
+	--text-font: 'GmarketSansMedium';
+	--icon-font: 'Material Symbols Outlined';
+}
 
 html, body {
 	margin: 0;
@@ -33,81 +29,77 @@ html, body {
 }
 
 html {
-	background-color: #EFEFEF;
+	background-color: var(--back-color);
 	display: flex;
 	justify-content: center;
 	min-height: 100vh;
 }
 
-body {
-	width: 800px;
+body, body.default {
+	width: var(--default-width);
 	background-color: white;
 	padding-bottom: 120px;
 }
 
 body.wide {
-	width: 1200px;
+	width: var(--wide-width);
 }
 
 body.narrow {
-	width: 500px;
+	width: var(--narrow-width);
 }
 
 
 
 body, p, div, span, a, input, select, option, textarea, button, table, th, td, label, fieldset, legend {
-	font-family: 'GmarketSansMedium';
-	color: #555;
+	font-family: var(--text-font);
+	color: var(--text-color);
 }
 
 h1, h2, h3 {
-	font-family: 'GmarketSansMedium';
-	color: #444;
+	font-family: var(--text-font);
+	color: var(--header-color);
 	padding: 0 1rem;	
 	padding-top: .5rem;
 }
 
-body > div {
+body > div, body > main > div {
 	padding: 0.3rem 1rem;
 }
 
 
 h1 { font-size: 2rem; border-bottom: 1px solid #CCC; }
-h1 small { font-size: 1.2rem; color: #666; }
+h1 small { font-size: 1.2rem; color: var(--sub-text-color); }
 h2 { font-size: 1.5rem; border-bottom: 1px dashed #CCC; }
-h2 small { font-size: 1.1rem; color: #777; }
+h2 small { font-size: 1.1rem; color: --sub-text-color; }
 h3 { font-size: 1.2rem; }
-h3 small { font-size: 1rem; color: #777; }
-
+h3 small { font-size: 1rem; color: --sub-text-color; }
 
 
 
 h1.main::before {
-	font-family: 'Material Symbols Outlined';
+	font-family: var(--icon-font);
   	content: '\e666';
   	margin-right: 10px;
   	float: left;
 	font-size: 2.5rem;
-	/* transform: translate(0, -9px); */
 }
 
 h1.sub::before {
-	font-family: 'Material Symbols Outlined';
+	font-family: var(--icon-font);
   	content: '\ea19';
   	margin-right: 10px;
   	float: left;
 	font-size: 2.5rem;
-	/* transform: translate(0, -9px); */
 }
 
 
 h1.page::before {
-	font-family: 'Material Symbols Outlined';
+	font-family: var(--icon-font);
   	content: '\e0e0';
   	margin-right: 10px;
   	float: left;
 	font-size: 2.5rem;
-	/* transform: translate(0, -9px); */
 }
 
 form {
@@ -158,8 +150,12 @@ input.long, textarea.long, button.long, select.long {
 	width: 350px;
 }
 
+.narrow input.long, .narrow textarea.long, .narrow button.long, .narrow select.long {
+	width: calc(100% - 20px);
+}
+
 input.full, textarea.full, button.full, select.full {
-	width: calc(100% - 16px);
+	width: calc(100% - 20px);
 }
 
 textarea.short {
@@ -180,23 +176,23 @@ input, textarea {
 
 input[type=button], input[type=submit], button {
 	padding: 5px 10px;
-	background-color: #EFEFEF;
+	background-color: var(--secondary-color);
 	cursor: pointer;
 	min-height: 36px;
 }
 
 input[type=button].primary, input[type=submit].primary, button.primary {
 	/* background-color: rgba(100, 149, 237, .2); */
-	background-color: #DEDEDE;
+	background-color: var(--primary-color);
 }
 
 input[type=button].primary:hover, input[type=submit].primary:hover, button.primary:hover {
 	/* background-color: rgba(100, 149, 237, .3); */
-	background-color: #EFEFEF;
+	background-color: var(--secondary-color);
 }
 
 input[type=button]:hover, input[type=submit]:hover, button:hover {
-	background-color: #DEDEDE;
+	background-color: var(--primary-color);
 }
 
 button {
@@ -214,7 +210,7 @@ button .material-symbols-outlined {
 
 
 button.add::before {
-	font-family: 'Material Symbols Outlined';
+	font-family: var(--icon-font);
   	content: '\e746';
 	position: absolute;
 	left: 11px;
@@ -223,7 +219,7 @@ button.add::before {
 }
 
 button.back::before {
-	font-family: 'Material Symbols Outlined';
+	font-family: var(--icon-font);
   	content: '\e166';
 	position: absolute;
 	left: 11px;
@@ -232,7 +228,7 @@ button.back::before {
 }
 
 button.list::before {
-	font-family: 'Material Symbols Outlined';
+	font-family: var(--icon-font);
   	content: '\e0ee';
 	position: absolute;
 	left: 11px;
@@ -242,7 +238,7 @@ button.list::before {
 
 
 button.del::before {
-	font-family: 'Material Symbols Outlined';
+	font-family: var(--icon-font);
   	content: '\e872';
 	position: absolute;
 	left: 11px;
@@ -252,7 +248,7 @@ button.del::before {
 
 
 button.edit::before {
-	font-family: 'Material Symbols Outlined';
+	font-family: var(--icon-font);
   	content: '\e745';
 	position: absolute;
 	left: 11px;
@@ -262,7 +258,7 @@ button.edit::before {
 
 
 button.login::before {
-	font-family: 'Material Symbols Outlined';
+	font-family: var(--icon-font);
   	content: '\ea77';
 	position: absolute;
 	left: 11px;
@@ -272,7 +268,7 @@ button.login::before {
 
 
 button.logout::before {
-	font-family: 'Material Symbols Outlined';
+	font-family: var(--icon-font);
   	content: '\e9ba';
 	position: absolute;
 	left: 11px;
@@ -282,7 +278,7 @@ button.logout::before {
 
 
 button.in::before {
-	font-family: 'Material Symbols Outlined';
+	font-family: var(--icon-font);
   	content: '\f71a';
 	position: absolute;
 	left: 11px;
@@ -292,7 +288,7 @@ button.in::before {
 
 
 button.out::before {
-	font-family: 'Material Symbols Outlined';
+	font-family: var(--icon-font);
   	content: '\f70e';
 	position: absolute;
 	left: 11px;
@@ -302,7 +298,7 @@ button.out::before {
 
 
 button.reply::before {
-	font-family: 'Material Symbols Outlined';
+	font-family: var(--icon-font);
   	content: '\e15e';
 	position: absolute;
 	left: 11px;
@@ -312,7 +308,7 @@ button.reply::before {
 
 
 button.comment::before {
-	font-family: 'Material Symbols Outlined';
+	font-family: var(--icon-font);
   	content: '\e0b9';
 	position: absolute;
 	left: 11px;
@@ -322,7 +318,7 @@ button.comment::before {
 
 
 button::before {
-	font-family: 'Material Symbols Outlined';
+	font-family: var(--icon-font);
   	content: '\e323';
 	position: absolute;
 	left: 11px;
@@ -336,6 +332,10 @@ table {
 	margin: 1rem;
 	box-sizing: border-box;
 	width: calc(100% - 32px);
+}
+
+div > table {
+	margin: 0;
 }
 
 table th, table td {
@@ -369,10 +369,6 @@ body.narrow table.vertical td {
 table + table {
 	margin-top: 30px;
 }
-
-
-
-
 
 
 p {
@@ -416,7 +412,6 @@ hr {
 	width: 500px;
 }
 
-
 .badge {
 	float: right;
 	font-size: .8rem;
@@ -446,9 +441,6 @@ hr {
 	text-shadow: 0 0 7px cornflowerblue;
 }
 
-
-
-
 label + label {
 	margin-left: 7px;
 }
@@ -456,8 +448,6 @@ label + label {
 label input[type=checkbox], label input[type=radio] {
 	transform: translate(0, 1px);
 }
-
-
 
 .group {
 	display: flex;
@@ -476,7 +466,6 @@ label input[type=checkbox], label input[type=radio] {
 	white-space: nowrap;
 	font-size: 14px;
 }
-
 
 .group input[type=text] {
 	margin-left: -1px;
@@ -508,15 +497,10 @@ label input[type=checkbox], label input[type=radio] {
 	border-bottom-right-radius: 3px;
 }
 
-
 .seperate {
 	display: flex;
 	justify-content: space-between;
 }
-
-
-
-
 
 div.list {
 	width: max-content;
@@ -544,8 +528,6 @@ div.list > div {
 div.list > div:last-child {
 	border-bottom: 0;
 }
-
-
 
 pre.code {
 	font-family: consols;
