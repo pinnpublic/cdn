@@ -74,11 +74,19 @@ full version
     - `<h3>Title</h3>`
     - `<h3>Title <sub>Sub Title</sub></h3>`
 
+```
+<h1>게시판 <small>목록보기</small></h1>
+```    
+
 1단계 제목에는 아이콘을 삽입할 수 있다.
 
 - `<h1 class="main">Title</h1>` : 메인 페이지
 - `<h1 class="sub">Title</h1>` : 서브 페이지
 - `<h1 class="page">Title</h1>` : 일반 페이지
+
+```
+<h1 class="main">토이 프로젝트 <small>JSP Model 2</small></h1>
+```
 
 ### Form Controls
 
@@ -88,6 +96,12 @@ full version
 -  `<input class="short">` : width(100px)
 -  `<input class="long">` : width(350px)
 -  `<input class="full">` : width(100%)
+
+```
+<input type="text" name="name" class="short" placeholder="이름 입력">
+<input type="text" name="tel" class="long" placeholder="연락처 입력">
+<input type="text" name="tel" class="full" placeholder="주소 입력">
+```
 
 메인 버튼에 색상을 지정할 수 있다. 대상: `<input type="button">`, `<input type="submit">`, `<button>`
 
