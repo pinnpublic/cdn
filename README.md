@@ -112,7 +112,46 @@ full version
 
 - 기본 설정 : 테두리, 너비(100%)
 - `<th>` : background color(#EFEFEF)
+
+```
+<table>
+    <tr>
+        <th>column</th>
+        <th>column</th
+        <th>column</th
+    </tr>
+    <tr>
+        <td>cell</td>
+        <td>cell</td>
+        <td>cell</td>
+    </tr>
+    <tr>
+        <td>cell</td>
+        <td>cell</td>
+        <td>cell</td>
+    </tr>
+</table>
+```
+
 - 세로 모드 : `<table class="vertical">`
+
+```
+<table class="vertical">
+    <tr>
+        <th>column</th>
+        <td>cell</td>
+    </tr>
+    <tr>
+        <th>column</th>
+        <td>cell</td>
+    </tr>
+    <tr>
+        <th>column</th>
+        <td>cell</td>
+    </tr>
+</table>
+```
+
 
 패널
 
