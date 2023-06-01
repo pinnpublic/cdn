@@ -134,7 +134,9 @@ full version
 - `<button class="reply">답변하기</button>`
 - `<button class="comment">댓글달기</button>`
 
-테이블
+### Table
+
+기본 설정이 적용되어 있다.
 
 - 테두리(1px)
 - 너비(100%)
