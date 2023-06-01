@@ -6,8 +6,6 @@ This is a class library repository.
 
 Copy the following code and add it to the &lt;head&gt; tag of your html document.
 
-<br><br>
-
 ```html
 <link rel="stylesheet" href="https://me2.do/5BvBFJ57">
 ```
