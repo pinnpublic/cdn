@@ -81,8 +81,7 @@ full version
 
 ### Form Controls
 
-크기(너비)를 지정할 수 있다.   
-`<input>`, `<select>`, `<button>`, `<textarea>`
+크기(너비)를 지정할 수 있다. `<input>`, `<select>`, `<button>`, `<textarea>`
 
 -  `<input>` : width(User Agent)
 -  `<input class="short">` : width(100px)
