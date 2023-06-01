@@ -182,9 +182,16 @@ full version
 ```
 
 
-패널
+### Panel
 
-- `<div class="panel" title="Subject">Content</div>`
+글상자
+
+```
+<div class="panel" title="Subject">
+    Content
+</div>
+```
+
 - 너비 지정
     - `<div class="panel">Content</div>`
     - `<div class="panel short">Content</div>`
