@@ -183,8 +183,8 @@ full version
 <table>
     <tr>
         <th>column</th>
-        <th>column</th
-        <th>column</th
+        <th>column</th>
+        <th>column</th>
     </tr>
     <tr>
         <td>cell</td>
