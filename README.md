@@ -30,7 +30,7 @@ full version
 
 - 구글 아이콘 기본 적용(https://fonts.google.com/icons)
 - 웹 폰트 기본 적용(GmarketSansMedium)
-- 문서가 특정 너비(narrow(500px), default(800px), wide(1200px))의 중앙 정렬이다.
+- 문서는 특정 너비(narrow(500px), default(800px), wide(1200px))의 중앙 정렬을 한다.
 
 
 
@@ -44,7 +44,7 @@ full version
 
 ### Document Basic Structure
 
-```
+``` html
 <!DOCTYPE html>
 <html lang="en">
 <head>
