@@ -30,11 +30,12 @@ full version
 
 - 구글 아이콘 기본 적용(https://fonts.google.com/icons)
 - 웹 폰트 기본 적용(GmarketSansMedium)
-- 문서는 특정 너비(narrow(500px), default(800px), wide(1200px))의 중앙 정렬을 한다.
+- 문서는 특정 너비(narrow(500px), default(800px), wide(1200px))의 중앙 정렬 한다.
+- 반응형 지원 X
 
 ### &lt;body&gt;
 
-문서의 너비를 조절한다.
+문서 너비를 조절한다.
 
 - `<body class="XXX">` : 800px
 - `<body class="XXX" class="narrow">` : 500px
@@ -106,3 +107,19 @@ full version
 - `<button class="edit">수정하기</button>`
 - `<button class="reply">답변하기</button>`
 - `<button class="comment">댓글달기</button>`
+
+테이블
+
+- 기본 설정 : 테두리, 너비(100%)
+- `<th>` : background color(#EFEFEF)
+- 세로 모드 : `<table class="vertical">`
+
+패널
+
+- `<div class="panel" title="Subject">Content</div>`
+- 너비 지정
+    - `<div class="panel">Content</div>`
+    - `<div class="panel short">Content</div>`
+    - `<div class="panel long">Content</div>`
+
+

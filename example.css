@@ -345,7 +345,7 @@ table th, table td {
 }
 
 table th {
-	background-color: #EFEFEF;
+	background-color: var(--back-color);
 }
 
 table.vertical th {
