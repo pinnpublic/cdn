@@ -38,9 +38,9 @@ full version
 
 문서의 너비를 조절한다.
 
-- &lt;body class="XXX"&gt; : 800px
-- &lt;body class="XXX" class="narrow"&gt; : 500px
-- &lt;body class="XXX" class="wide"&gt; : 1200px
+- `<body class="XXX">` : 800px
+- `<body class="XXX" class="narrow">` : 500px
+- `<body class="XXX" class="wide">` : 1200px
 
 ### Document Basic Structure
 
