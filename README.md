@@ -81,10 +81,13 @@ full version
 
 ### Form Controls
 
-크기(너비)를 지정할 수 있다. `<input>`, `<select>`, `<button>`, `<textarea>`
+크기(너비)를 지정할 수 있다. 대상: `<input>`, `<select>`, `<button>`, `<textarea>`
 
 -  `<input>` : width(User Agent)
 -  `<input class="short">` : width(100px)
 -  `<input class="long">` : width(350px)
 -  `<input class="full">` : width(100%)
 
+메인 버튼에 색상을 지정할 수 있다. 대상: `<input type="button">`, `<input type="submit">`, `<button>`
+
+- `<input type="button" class="primary">`
