@@ -70,6 +70,8 @@ full version
 
 ### Heading
 
+제목을 표시한다.
+
 - 1단계 제목
     - `<h1>Title</h1>`
     - `<h1>Title <sub>Sub Title</sub></h1>`
@@ -95,6 +97,8 @@ full version
 ```
 
 ### Form Controls
+
+컨트롤의 모양을 지정한다.
 
 크기(너비)를 지정할 수 있다. 대상: `<input>`, `<select>`, `<button>`, `<textarea>`
 
@@ -134,9 +138,42 @@ full version
 - `<button class="reply">답변하기</button>`
 - `<button class="comment">댓글달기</button>`
 
+
+
+### Label Control
+
+라벨이 있는 입력 도구를 만든다.(feat.텍스트박스)
+
+```
+<div class="group">
+    <label>아이디</label>
+	<input type="text">
+</div>
+```
+
+
+### Button Group
+
+버튼 그룹을 만든다.(feat.input, button)
+
+```
+<div class="group">
+    <input type="button" value="확인">
+    <input type="button" value="취소">
+</div>
+
+<div class="group">
+    <button class="add">글쓰기</button>
+    <button class="list">목록보기</button>
+</div>
+```
+
+
 ### Table
 
-기본 설정이 적용되어 있다.
+테이블 서식을 지정한다.
+
+기본 설정
 
 - 테두리(1px)
 - 너비(100%)
@@ -184,17 +221,78 @@ full version
 
 ### Panel
 
-글상자
+영역을 표시한다.
 
 ```
-<div class="panel" title="Subject">
+<div class="panel long" title="Subject">
     Content
 </div>
 ```
 
-- 너비 지정
-    - `<div class="panel">Content</div>`
-    - `<div class="panel short">Content</div>`
-    - `<div class="panel long">Content</div>`
+
+너비를 지정한다.
+
+- `<div class="panel">Content</div>`
+- `<div class="panel short">Content</div>`
+- `<div class="panel long">Content</div>`
 
 
+### Badge
+
+배지를 표시한다.
+
+```
+<span class="badge right red">5</span>
+```
+
+방향 지정
+
+- `<span class="badge" class="left">5</span>`
+- `<span class="badge" class="right">5</span>`
+
+색상 지정
+
+- `<span class="badge" class="red">5</span>`
+- `<span class="badge" class="yellow">5</span>`
+- `<span class="badge" class="blue">5</span>`
+
+### Seperate
+
+컨테이너의 두 요소를 좌우로 분리 정렬한다.
+
+```
+<div class="seperate">
+    <div>자바</div>
+    <div>오라클</div>
+</div>
+```
+
+
+### List
+
+목록을 만든다.
+
+```
+<div class="list">
+    <div>item</div>
+    <div>item</div>
+    <div>item</div>
+</div>
+
+<div class="list full">
+    <div>item</div>
+    <div>item</div>
+    <div>item</div>
+</div>
+```
+
+### Programming Code
+
+코드를 삽입한다.
+
+```
+<pre class="code">
+    int a = 10;
+    System.out.println(a);
+</pre>
+```
