@@ -63,7 +63,7 @@ full version
 - `<body class="XXX" class="narrow">` : 500px
 - `<body class="XXX" class="wide">` : 1200px
 
-```
+``` html
 <body class="narrow">
 ```
 
@@ -82,7 +82,7 @@ full version
     - `<h3>Title</h3>`
     - `<h3>Title <sub>Sub Title</sub></h3>`
 
-```
+``` html
 <h1>게시판 <small>목록보기</small></h1>
 ```    
 
@@ -92,7 +92,7 @@ full version
 - `<h1 class="sub">Title</h1>` : 서브 페이지
 - `<h1 class="page">Title</h1>` : 일반 페이지
 
-```
+``` html
 <h1 class="main">토이 프로젝트 <small>JSP Model 2</small></h1>
 ```
 
@@ -107,7 +107,7 @@ full version
 -  `<input class="long">` : width(350px)
 -  `<input class="full">` : width(100%)
 
-```
+``` html
 <input type="text" name="name" class="short" placeholder="이름 입력">
 <input type="text" name="tel" class="long" placeholder="연락처 입력">
 <input type="text" name="tel" class="full" placeholder="주소 입력">
@@ -119,7 +119,7 @@ full version
 - `<input type="submit">`
 - `<button>`
 
-```
+``` html
 <input type="button" class="primary">
 ```
 
@@ -144,7 +144,7 @@ full version
 
 라벨이 있는 입력 도구를 만든다.(feat.텍스트박스)
 
-```
+``` html
 <div class="group">
     <label>아이디</label>
     <input type="text">
@@ -156,7 +156,7 @@ full version
 
 버튼 그룹을 만든다.(feat.input, button)
 
-```
+``` html
 <div class="group">
     <input type="button" value="확인">
     <input type="button" value="취소">
@@ -179,7 +179,7 @@ full version
 - 너비(100%)
 - header : background color(#EFEFEF)
 
-```
+``` html
 <table>
     <tr>
         <th>column</th>
@@ -201,7 +201,7 @@ full version
 
 - 세로 모드 : `<table class="vertical">`
 
-```
+``` html
 <table class="vertical">
     <tr>
         <th>column</th>
@@ -223,7 +223,7 @@ full version
 
 영역을 표시한다.
 
-```
+``` html
 <div class="panel long" title="Subject">
     Content
 </div>
@@ -241,7 +241,7 @@ full version
 
 배지를 표시한다.
 
-```
+``` html
 <span class="badge right red">5</span>
 ```
 
@@ -260,7 +260,7 @@ full version
 
 컨테이너의 두 요소를 좌우로 분리 정렬한다.
 
-```
+``` html
 <div class="seperate">
     <div>자바</div>
     <div>오라클</div>
@@ -272,7 +272,7 @@ full version
 
 목록을 만든다.
 
-```
+``` html
 <div class="list">
     <div>item</div>
     <div>item</div>
@@ -290,7 +290,7 @@ full version
 
 코드를 삽입한다.
 
-```
+``` html
 <pre class="code">
     int a = 10;
     System.out.println(a);
