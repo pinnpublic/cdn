@@ -74,6 +74,18 @@ full version
     - `<h3>Title <sub>Sub Title</sub></h3>`
 
 1단계 제목에는 아이콘을 삽입할 수 있다.
+
 - `<h1 class="main">Title</h1>` : 메인 페이지
 - `<h1 class="sub">Title</h1>` : 서브 페이지
 - `<h1 class="page">Title</h1>` : 일반 페이지
+
+### Form Controls
+
+크기(너비)를 지정할 수 있다.   
+`<input>`, `<select>`, `<button>`, `<textarea>`
+
+-  `<input>` : width(User Agent)
+-  `<input class="short">` : width(100px)
+-  `<input class="long">` : width(350px)
+-  `<input class="full">` : width(100%)
+
