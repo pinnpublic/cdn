@@ -33,14 +33,6 @@ full version
 - 문서는 특정 너비(narrow(500px), default(800px), wide(1200px))의 중앙 정렬 한다.
 - 반응형 지원 X
 
-### &lt;body&gt;
-
-문서 너비를 조절한다.
-
-- `<body class="XXX">` : 800px
-- `<body class="XXX" class="narrow">` : 500px
-- `<body class="XXX" class="wide">` : 1200px
-
 ### Document Basic Structure
 
 ``` html
@@ -61,6 +53,20 @@ full version
 </body>
 </html>
 ```
+
+
+### Body
+
+문서 너비를 조절한다.
+
+- `<body class="XXX">` : 800px
+- `<body class="XXX" class="narrow">` : 500px
+- `<body class="XXX" class="wide">` : 1200px
+
+```
+<body class="narrow">
+```
+
 
 ### Heading
 
