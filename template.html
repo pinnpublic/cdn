@@ -9,6 +9,7 @@
 </head>
 <body>
 
+
 	<h1 class="main">H1 Title <small>sub title</small></h1>
 	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci facilis quis ducimus et asperiores saepe enim deleniti accusantium nemo blanditiis corporis esse vel culpa velit consequatur nam amet, quo tenetur?</p>
 
@@ -181,32 +182,51 @@
 System.out.println(a);</pre>
 
 	
-	<h2>기능</h2>
+	<h3>모달</h3>
 
 	<div>
 		<button class="modal" data-modal-button="add">글쓰기</button>
 	</div>
 
-	<div data-modal-window="add" data-modal-title="회원가입"">
+	<div data-modal-window="add" data-modal-title="Lorem ipsum"">
 		<div class="group">
-			<label>이름</label>
+			<label>Lorem</label>
 			<input type="text" class="short">
 		</div>
 		<div class="group">
-			<label>주소</label>
+			<label>Lorem</label>
 			<input type="text" class="full">
 		</div>
 		<div class="group">
-			<label>전화</label>
+			<label>Lorem</label>
 			<input type="text" class="long">
 		</div>
 		<div>
-			<button class="ok" data-modal-ok="add">확인</button>
-			<button class="cancel" data-modal-cancel="add">닫기</button>
+			<button class="ok" data-modal-ok="add">OK</button>
+			<button class="cancel" data-modal-cancel="add">Cancel</button>
 		</div>
 	</div>
 
 
+	<h3>패널</h3>
+
+	<div>
+		<button class="panel" data-panel-button="panel">패널 열기</button>
+		<button class="panel-right" data-panel-button="panel-right">패널 열기</button>
+		<button class="panel" data-panel-button="panel-wide">패널 열기</button>
+	</div>
+
+	<div data-panel-window="panel" data-panel-title="Lorem ipsum">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, cum minus. Enim aperiam molestiae, esse eum ea repellendus ut, quis vel hic ducimus amet cumque doloremque. Similique qui error fugit.
+	</div>
+
+	<div data-panel-window="panel-right" data-panel-title="Lorem ipsum" data-panel-direction="right">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, cum minus. Enim aperiam molestiae, esse eum ea repellendus ut, quis vel hic ducimus amet cumque doloremque. Similique qui error fugit.
+	</div>
+
+	<div data-panel-window="panel-wide" data-panel-title="Lorem ipsum" data-panel-size="wide">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, cum minus. Enim aperiam molestiae, esse eum ea repellendus ut, quis vel hic ducimus amet cumque doloremque. Similique qui error fugit.
+	</div>
 
 
 	<script src="http://pinnpublic.dothome.co.kr/cdn/example-min.js"></script>

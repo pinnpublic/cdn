@@ -316,8 +316,8 @@ full version
 모달을 띄운다. `group` 식별자를 통해 모달을 구성한다.
 
 - `data-modal-button="group"` : 모달 트리거
-- `data-modal-window="group"` : 모달창
-- `data-modal-title="title"` : 모달창 제목
+- `data-modal-window="group"` : 모달
+- `data-modal-title="title"` : 모달 제목
 - `data-modal-ok="group"` : 확인 버튼
 - `data-modal-cancel="group"` : 취소 버튼
 
@@ -345,6 +345,29 @@ full version
     </div>
 </div>
 ```
+
+### Panel
+
+패널을 띄운다. `group` 식별자를 통해 패널을 구성한다.
+
+- `data-panel-button="group"` : 패널 트리거
+- `data-panel-window="group"` : 패널
+- `data-panel-title="Lorem ipsum"` : 패널 제목
+- `data-panel-direction="right"` : 패널 방향(생략하면 left)
+- `data-panel-size="wide"` : 패널 사이즈(생략하면 300px, wide 500px)
+
+
+``` html
+<div>
+    <button class="panel" data-panel-button="panel">패널 열기</button>
+</div>
+
+<div data-panel-window="panel" data-panel-title="Lorem ipsum">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, cum minus. Enim aperiam molestiae, esse eum ea repellendus ut, quis vel hic ducimus amet cumque doloremque. Similique qui error fugit.
+</div>
+```
+
+
 
 ---
 

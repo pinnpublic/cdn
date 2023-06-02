@@ -357,6 +357,28 @@ button.cancel::before {
 }
 
 
+button.panel::before {
+	font-family: var(--icon-font);
+  	content: '\f7e4';
+	position: absolute;
+	left: 11px;
+	top: 4px;
+	font-size: 1.25rem;
+}
+
+
+button.panel-right::before {
+	font-family: var(--icon-font);
+  	content: '\f7e5';
+	position: absolute;
+	left: 11px;
+	top: 4px;
+	font-size: 1.25rem;
+}
+
+
+
+
 button::before {
 	font-family: var(--icon-font);
   	content: '\e323';
@@ -648,4 +670,48 @@ pre.code {
 *[data-modal-window] .modal-content div:last-child {
 	margin-top: 1rem;
 	text-align: right;
+}
+
+
+
+*[data-panel-window] {
+	position: fixed;
+	background-color: #FFF;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 300px;
+	border-right: 1px solid var(--border-color);
+	box-sizing: border-box;
+	box-shadow: 0 0 3px var(--back-color);
+	min-height: 100vh;
+	z-index: 99;
+	transform: translate(-300px, 0);
+	transition-duration: 500ms;
+	transition-property: transform;
+}
+
+*[data-panel-direction=right] {
+	left: auto;
+	right: 0;
+	transform: translate(300px, 0);
+	border-left: 1px solid var(--border-color);
+}
+
+*[data-panel-size=wide] {
+	width: 500px;
+	transform: translate(-500px, 0);
+}
+
+*[data-panel-window] .panel-title {
+	border-bottom: 1px solid var(--border-color);
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 5px;
+	display: flex;
+	justify-content: space-between;
+}
+
+*[data-panel-window] .panel-title span:last-child {
+	cursor: pointer;
 }
