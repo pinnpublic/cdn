@@ -6,11 +6,17 @@ This is a class library repository.
 
 ## CDN
 
-Copy the following code and add it to the &lt;head&gt; tag of your html document.
+Copy the following code and add it to the &lt;head&gt; tag of your HTML document.
 
 ```html
-<link rel="stylesheet" href="https://me2.do/5BvBFJ57">
+<link rel="stylesheet" href="http://pinnpublic.dothome.co.kr/cdn/example-min.css">
 ```
+
+Copy the following code and add it before the &lt;/head&gt; tag in the HTML document.
+```html
+<script src="http://pinnpublic.dothome.co.kr/cdn/example-min.js"></script>
+```
+
 <!-- 
 full version
 &lt;link rel="stylesheet" href="https://me2.do/xmPHeA6J"&gt;
@@ -176,7 +182,8 @@ full version
 기본 설정
 
 - 테두리(1px)
-- 너비(100%)
+- 너비(100%) : `<table>`
+- 너비(auto) : `<table class="content">`
 - header : background color(#EFEFEF)
 
 ``` html
@@ -219,12 +226,12 @@ full version
 ```
 
 
-### Panel
+### Wells
 
 영역을 표시한다.
 
 ``` html
-<div class="panel long" title="Subject">
+<div class="well long" title="Subject">
     Content
 </div>
 ```

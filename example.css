@@ -63,6 +63,10 @@ h1, h2, h3 {
 	padding-top: .5rem;
 }
 
+div > h1, div > h2, div > h3 {
+	padding: 0;
+}
+
 body > div, body > main > div {
 	padding: 0.3rem 1rem;
 }
@@ -102,12 +106,17 @@ h1.page::before {
 	font-size: 2.5rem;
 }
 
+
 form {
 	display: block;
 }
 
 form > div {
 	padding: 0.3rem 1rem;
+}
+
+div > form > div {
+	padding: 0.3rem 0;
 }
 
 input, textarea, button, select {
@@ -334,6 +343,10 @@ table {
 	width: calc(100% - 32px);
 }
 
+table.content {
+	width: auto;
+}
+
 div > table {
 	margin: 0;
 }
@@ -389,15 +402,17 @@ hr {
 	margin: 2rem 0;
 }
 
-.panel {
+.well {
 	border: 1px solid #CCC;
 	background-color: #EFEFEF;
 	margin: 1rem;
 	width: auto;
+	padding-top: 10px;
 	padding-bottom: 10px;
+	font-size: 14px;
 }
 
-.panel[title]::before {
+.well[title]::before {
 	content: attr(title);
 	display: block;
 	border-bottom: 1px solid #CCC;
@@ -406,11 +421,11 @@ hr {
 	margin-top: 7px;
 }
 
-.panel.short {
+.well.short {
 	width: 100px;
 }
 
-.panel.long {
+.well.long {
 	width: 500px;
 }
 
@@ -536,6 +551,7 @@ pre.code {
 	background-color: rgba(150, 150, 150, .1);
 	border: 1px solid #BBB;
 	border-radius: 3px;
-	padding: 1rem;
+	padding: .5rem 1rem;
+	padding-bottom: .6rem;
 	margin: 1rem;	
 }
