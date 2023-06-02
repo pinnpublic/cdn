@@ -525,6 +525,12 @@ label input[type=checkbox], label input[type=radio] {
 	border-bottom-left-radius: 0;
 }
 
+.group select {
+	margin-left: -1px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
 .group input.full[type=text] {
 	margin-left: -1px;
 	border-top-left-radius: 0;
