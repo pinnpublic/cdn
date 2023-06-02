@@ -309,7 +309,7 @@ full version
 
 모달을 띄운다.
 
-- `data-modal-button="group"` : 모달을 띄우는 역할을 한다.
+- `data-modal-button="group"` : 모달 트리거
 - `data-modal-window="group"` : 모달창
 - `data-modal-title="title"` : 모달창 제목
 - `data-modal-ok="group"` : 확인 버튼
