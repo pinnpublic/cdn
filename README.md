@@ -304,6 +304,42 @@ full version
 </pre>
 ```
 
+
+### Modal
+
+모달을 띄운다.
+
+- `data-modal-button="group"` : 모달을 띄우는 역할을 한다.
+- `data-modal-window="group"` : 모달창
+- `data-modal-title="title"` : 모달창 제목
+- `data-modal-ok="group"` : 확인 버튼
+- `data-modal-cancel="group"` : 취소 버튼
+
+``` html
+<div>
+    <button class="modal" data-modal-button="add">글쓰기</button>
+</div>
+
+<div data-modal-window="add" data-modal-title="회원가입"">
+    <div class="group">
+        <label>이름</label>
+        <input type="text" class="short">
+    </div>
+    <div class="group">
+        <label>주소</label>
+        <input type="text" class="full">
+    </div>
+    <div class="group">
+        <label>전화</label>
+        <input type="text" class="long">
+    </div>
+    <div>
+        <button class="ok" data-modal-ok="add">확인</button>
+        <button class="cancel" data-modal-cancel="add">닫기</button>
+    </div>
+</div>
+```
+
 ---
 
 created by in. 2023.06
