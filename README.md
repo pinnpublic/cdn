@@ -6,11 +6,17 @@ This is a class library repository.
 
 ## CDN
 
-Copy the following code and add it to the &lt;head&gt; tag of your html document.
+Copy the following code and add it to the &lt;head&gt; tag of your HTML document.
 
 ```html
-<link rel="stylesheet" href="https://me2.do/5BvBFJ57">
+<link rel="stylesheet" href="http://pinnpublic.dothome.co.kr/cdn/example-min.css">
 ```
+
+Copy the following code and add it before the &lt;/head&gt; tag in the HTML document.
+```html
+<script src="http://pinnpublic.dothome.co.kr/cdn/example-min.js"></script>
+```
+
 <!-- 
 full version
 &lt;link rel="stylesheet" href="https://me2.do/xmPHeA6J"&gt;
@@ -176,7 +182,8 @@ full version
 기본 설정
 
 - 테두리(1px)
-- 너비(100%)
+- 너비(100%) : `<table>`
+- 너비(auto) : `<table class="content">`
 - header : background color(#EFEFEF)
 
 ``` html
@@ -219,12 +226,12 @@ full version
 ```
 
 
-### Panel
+### Wells
 
 영역을 표시한다.
 
 ``` html
-<div class="panel long" title="Subject">
+<div class="well long" title="Subject">
     Content
 </div>
 ```
@@ -295,6 +302,42 @@ full version
     int a = 10;
     System.out.println(a);
 </pre>
+```
+
+
+### Modal
+
+모달을 띄운다.
+
+- `data-modal-button="group"` : 모달 트리거
+- `data-modal-window="group"` : 모달창
+- `data-modal-title="title"` : 모달창 제목
+- `data-modal-ok="group"` : 확인 버튼
+- `data-modal-cancel="group"` : 취소 버튼
+
+``` html
+<div>
+    <button class="modal" data-modal-button="add">글쓰기</button>
+</div>
+
+<div data-modal-window="add" data-modal-title="회원가입"">
+    <div class="group">
+        <label>이름</label>
+        <input type="text" class="short">
+    </div>
+    <div class="group">
+        <label>주소</label>
+        <input type="text" class="full">
+    </div>
+    <div class="group">
+        <label>전화</label>
+        <input type="text" class="long">
+    </div>
+    <div>
+        <button class="ok" data-modal-ok="add">확인</button>
+        <button class="cancel" data-modal-cancel="add">닫기</button>
+    </div>
+</div>
 ```
 
 ---

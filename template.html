@@ -99,6 +99,24 @@
 		</tr>
 	</table>
 
+	<table class="content">
+		<tr>
+			<th>column</th>
+			<th>column</th>
+			<th>column</th>
+		</tr>
+		<tr>
+			<td>cell</td>
+			<td>cell</td>
+			<td>cell</td>
+		</tr>
+		<tr>
+			<td>cell</td>
+			<td>cell</td>
+			<td>cell</td>
+		</tr>
+	</table>
+
 	<h3>테이블(세로)</h3>
 
 	<table class="vertical">
@@ -118,7 +136,11 @@
 
 	<h3>패널</h3>
 	
-	<div class="panel" title="Notice">
+	<div class="well">
+		Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate nemo optio, quas aspernatur accusamus ad fugiat, numquam commodi delectus accusantium illo iste inventore, dolore hic labore praesentium a fugit deserunt?
+	</div>
+
+	<div class="well" title="Notice">
 		Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate nemo optio, quas aspernatur accusamus ad fugiat, numquam commodi delectus accusantium illo iste inventore, dolore hic labore praesentium a fugit deserunt?
 	</div>
 
@@ -151,5 +173,36 @@
 
 	<pre class="code">int a = 10;
 System.out.println(a);</pre>
+
+	
+	<h2>기능</h2>
+
+	<div>
+		<button class="modal" data-modal-button="add">글쓰기</button>
+	</div>
+
+	<div data-modal-window="add" data-modal-title="회원가입"">
+		<div class="group">
+			<label>이름</label>
+			<input type="text" class="short">
+		</div>
+		<div class="group">
+			<label>주소</label>
+			<input type="text" class="full">
+		</div>
+		<div class="group">
+			<label>전화</label>
+			<input type="text" class="long">
+		</div>
+		<div>
+			<button class="ok" data-modal-ok="add">확인</button>
+			<button class="cancel" data-modal-cancel="add">닫기</button>
+		</div>
+	</div>
+
+
+
+
+	<script src="http://pinnpublic.dothome.co.kr/cdn/example.js"></script>
 </body>
 </html>

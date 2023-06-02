@@ -21,6 +21,7 @@
 	--wide-width: 1200px;
 	--text-font: 'GmarketSansMedium';
 	--icon-font: 'Material Symbols Outlined';
+	--border-color: #CCC;
 }
 
 html, body {
@@ -63,14 +64,18 @@ h1, h2, h3 {
 	padding-top: .5rem;
 }
 
+div > h1, div > h2, div > h3 {
+	padding: 0;
+}
+
 body > div, body > main > div {
 	padding: 0.3rem 1rem;
 }
 
 
-h1 { font-size: 2rem; border-bottom: 1px solid #CCC; }
+h1 { font-size: 2rem; border-bottom: 1px solid var(--border-color); }
 h1 small { font-size: 1.2rem; color: var(--sub-text-color); }
-h2 { font-size: 1.5rem; border-bottom: 1px dashed #CCC; }
+h2 { font-size: 1.5rem; border-bottom: 1px dashed var(--border-color); }
 h2 small { font-size: 1.1rem; color: --sub-text-color; }
 h3 { font-size: 1.2rem; }
 h3 small { font-size: 1rem; color: --sub-text-color; }
@@ -102,12 +107,17 @@ h1.page::before {
 	font-size: 2.5rem;
 }
 
+
 form {
 	display: block;
 }
 
 form > div {
 	padding: 0.3rem 1rem;
+}
+
+div > form > div {
+	padding: 0.3rem 0;
 }
 
 input, textarea, button, select {
@@ -317,6 +327,36 @@ button.comment::before {
 }
 
 
+button.modal::before {
+	font-family: var(--icon-font);
+  	content: '\e89e';
+	position: absolute;
+	left: 11px;
+	top: 4px;
+	font-size: 1.25rem;
+}
+
+
+button.ok::before {
+	font-family: var(--icon-font);
+  	content: '\e86c';
+	position: absolute;
+	left: 11px;
+	top: 4px;
+	font-size: 1.25rem;
+}
+
+
+button.cancel::before {
+	font-family: var(--icon-font);
+  	content: '\e5c9';
+	position: absolute;
+	left: 11px;
+	top: 4px;
+	font-size: 1.25rem;
+}
+
+
 button::before {
 	font-family: var(--icon-font);
   	content: '\e323';
@@ -334,12 +374,16 @@ table {
 	width: calc(100% - 32px);
 }
 
+table.content {
+	width: auto;
+}
+
 div > table {
 	margin: 0;
 }
 
 table th, table td {
-	border: 1px solid #CCC;
+	border: 1px solid var(--border-color);
 	padding: 7px;
 	font-weight: normal;
 }
@@ -385,32 +429,34 @@ a:hover {
 
 hr {
 	border: 0;
-	border-top: 1px solid #CCC;
+	border-top: 1px solid var(--border-color);
 	margin: 2rem 0;
 }
 
-.panel {
-	border: 1px solid #CCC;
+.well {
+	border: 1px solid var(--border-color);
 	background-color: #EFEFEF;
 	margin: 1rem;
 	width: auto;
+	padding-top: 10px;
 	padding-bottom: 10px;
+	font-size: 14px;
 }
 
-.panel[title]::before {
+.well[title]::before {
 	content: attr(title);
 	display: block;
-	border-bottom: 1px solid #CCC;
+	border-bottom: 1px solid var(--border-color);
 	padding-bottom: 5px;
 	margin-bottom: 10px;
 	margin-top: 7px;
 }
 
-.panel.short {
+.well.short {
 	width: 100px;
 }
 
-.panel.long {
+.well.long {
 	width: 500px;
 }
 
@@ -453,6 +499,10 @@ label input[type=checkbox], label input[type=radio] {
 
 .group {
 	display: flex;
+}
+
+.modal-content .group {
+	margin-bottom: .5rem;
 }
 
 .group label {
@@ -536,6 +586,60 @@ pre.code {
 	background-color: rgba(150, 150, 150, .1);
 	border: 1px solid #BBB;
 	border-radius: 3px;
-	padding: 1rem;
+	padding: .5rem 1rem;
+	padding-bottom: .6rem;
 	margin: 1rem;	
+}
+
+
+
+
+*[data-modal-window] {
+	position: fixed;
+	background-color: rgba(0, 0, 0, .3);
+	left: 0;
+	top: 0;
+	display: none;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100%;
+	min-height: 100vh;
+	z-index: 100;
+}
+
+*[data-modal-window] .modal-container {
+	border-radius: 5px;
+	padding: 1rem;
+	padding-bottom: .5rem;
+	margin-top: 20px;
+	width: 500px;
+	background-color: #FFF;
+	margin-right: 2rem;
+}
+
+*[data-modal-size=content] .modal-container {
+	width: auto;
+}
+
+*[data-modal-size=narrow] .modal-container {
+	width: 300px;
+}
+
+*[data-modal-size=wide] .modal-container {
+	width: 760px;
+}
+
+
+*[data-modal-window] .modal-header {
+	border-bottom: 1px solid var(--border-color);
+	padding: 2px 5px;
+}
+
+*[data-modal-window] .modal-content {
+	padding: 1rem 5px;
+}
+
+*[data-modal-window] .modal-content div:last-child {
+	margin-top: 1rem;
+	text-align: right;
 }

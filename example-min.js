@@ -1,0 +1,1 @@
+document.onload=()=>{const list=document.querySelectorAll('input, textarea');list.forEach(item=>{item.setAttribut('autocomplete','off')})};
