@@ -313,7 +313,7 @@ full version
 
 ### Modal
 
-모달을 띄운다.
+모달을 띄운다. `group` 식별자를 통해 모달을 구성한다.
 
 - `data-modal-button="group"` : 모달 트리거
 - `data-modal-window="group"` : 모달창
