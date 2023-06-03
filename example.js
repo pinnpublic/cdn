@@ -55,38 +55,38 @@ window.onload = () => {
     });
 
 
-    const panel_btn_list = document.querySelectorAll('*[data-panel-button]');
+    const sidebar_btn_list = document.querySelectorAll('*[data-sidebar-button]');
 
-    panel_btn_list.forEach(item => {
+    sidebar_btn_list.forEach(item => {
         item.onclick = function() {
 
 
             
-            const name = this.dataset['panelButton'];
-            const panel_window = document.querySelector('*[data-panel-window=' + name);
+            const name = this.dataset['sidebarButton'];
+            const sidebar_window = document.querySelector('*[data-sidebar-window=' + name);
             
-            if (panel_window.style.transform == 'translate(0px, 0px)') return;
+            if (sidebar_window.style.transform == 'translate(0px, 0px)') return;
     
             
 
-            panel_window.style.transform = 'translate(0, 0)';
+            sidebar_window.style.transform = 'translate(0, 0)';
 
-            const panel_title = document.createElement('div');
-            panel_title.className = 'panel-title';
-            panel_title.innerHTML = '<span>' + panel_window.dataset['panelTitle'] + '</span><span class="material-symbols-outlined">close</span>';
+            const sidebar_title = document.createElement('div');
+            sidebar_title.className = 'sidebar-title';
+            sidebar_title.innerHTML = '<span>' + sidebar_window.dataset['sidebarTitle'] + '</span><span class="material-symbols-outlined">close</span>';
 
-            panel_title.children[1].onclick = function() {
+            sidebar_title.children[1].onclick = function() {
 
                 let sign = 1;
                 let distance = 300;
 
-                if (panel_window.dataset['panelDirection'] != 'right') {
+                if (sidebar_window.dataset['sidebarDirection'] != 'right') {
                     sign = -1;
                 } else {
                     sign = 1;
                 }
 
-                if (panel_window.dataset['panelSize'] != 'wide') {
+                if (sidebar_window.dataset['sidebarSize'] != 'wide') {
                     distance = 300;
                 } else {
                     distance = 500;
@@ -94,15 +94,15 @@ window.onload = () => {
 
                 distance *= sign;
 
-                panel_window.style.transform = 'translate(' + distance + 'px, 0)';                
+                sidebar_window.style.transform = 'translate(' + distance + 'px, 0)';                
                 
                 setTimeout(function() {
-                    panel_window.removeChild(panel_window.children[0]);
+                    sidebar_window.removeChild(sidebar_window.children[0]);
                 }, 500);
             };
             
 
-            panel_window.prepend(panel_title);
+            sidebar_window.prepend(sidebar_title);
 
         }
     });

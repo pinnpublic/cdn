@@ -252,12 +252,12 @@ full version
 ```
 
 
-### Wells
+### Message
 
-영역을 표시한다.
+메시지를 표시한다.
 
 ``` html
-<div class="well long" title="Subject">
+<div class="message long" title="Subject">
     Content
 </div>
 ```
@@ -265,9 +265,9 @@ full version
 
 너비를 지정한다.
 
-- `<div class="panel">Content</div>`
-- `<div class="panel short">Content</div>`
-- `<div class="panel long">Content</div>`
+- `<div class="message">Content</div>`
+- `<div class="message short">Content</div>`
+- `<div class="message long">Content</div>`
 
 
 ### Badge
@@ -366,23 +366,23 @@ full version
 </div>
 ```
 
-### Panel
+### Sidebar
 
-패널을 띄운다. `group` 식별자를 통해 패널을 구성한다.
+사이드바를 띄운다. `group` 식별자를 통해 패널을 구성한다.
 
-- `data-panel-button="group"` : 패널 트리거
-- `data-panel-window="group"` : 패널
-- `data-panel-title="Lorem ipsum"` : 패널 제목
-- `data-panel-direction="right"` : 패널 방향(생략하면 left)
-- `data-panel-size="wide"` : 패널 사이즈(생략하면 300px, wide 500px)
+- `data-sidebar-button="group"` : 사이드바 트리거
+- `data-sidebar-window="group"` : 사이드바
+- `data-sidebar-title="Lorem ipsum"` : 사이드바 제목
+- `data-sidebar-direction="right"` : 사이드바 방향(생략하면 left)
+- `data-sidebar-size="wide"` : 사이드바 사이즈(생략하면 300px, wide 500px)
 
 
 ``` html
 <div>
-    <button class="panel" data-panel-button="panel">패널 열기</button>
+    <button class="sidebar" data-sidebar-button="sidebar">사이드바 열기</button>
 </div>
 
-<div data-panel-window="panel" data-panel-title="Lorem ipsum">
+<div data-sidebar-window="sidebar" data-sidebar-title="Lorem ipsum">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, cum minus. Enim aperiam molestiae, esse eum ea repellendus ut, quis vel hic ducimus amet cumque doloremque. Similique qui error fugit.
 </div>
 ```

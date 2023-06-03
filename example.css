@@ -395,7 +395,7 @@ button.cancel::before {
 }
 
 
-button.panel::before {
+button.sidebar::before {
 	font-family: var(--icon-font);
   	content: '\f7e4';
 	position: absolute;
@@ -405,7 +405,7 @@ button.panel::before {
 }
 
 
-button.panel-right::before {
+button.sidebar-right::before {
 	font-family: var(--icon-font);
   	content: '\f7e5';
 	position: absolute;
@@ -493,7 +493,7 @@ hr {
 	margin: 2rem 0;
 }
 
-.well {
+.message {
 	border: 1px solid var(--border-color);
 	background-color: #EFEFEF;
 	margin: 1rem;
@@ -503,7 +503,7 @@ hr {
 	font-size: 14px;
 }
 
-.well[title]::before {
+.message[title]::before {
 	content: attr(title);
 	display: block;
 	border-bottom: 1px solid var(--border-color);
@@ -512,11 +512,11 @@ hr {
 	margin-top: 7px;
 }
 
-.well.short {
+.message.short {
 	width: 100px;
 }
 
-.well.long {
+.message.long {
 	width: 500px;
 }
 
@@ -712,7 +712,7 @@ pre.code {
 
 
 
-*[data-panel-window] {
+*[data-sidebar-window] {
 	position: fixed;
 	background-color: #FFF;
 	left: 0;
@@ -729,19 +729,19 @@ pre.code {
 	transition-property: transform;
 }
 
-*[data-panel-direction=right] {
+*[data-sidebar-direction=right] {
 	left: auto;
 	right: 0;
 	transform: translate(300px, 0);
 	border-left: 1px solid var(--border-color);
 }
 
-*[data-panel-size=wide] {
+*[data-sidebar-size=wide] {
 	width: 500px;
 	transform: translate(-500px, 0);
 }
 
-*[data-panel-window] .panel-title {
+*[data-sidebar-window] .sidebar-title {
 	border-bottom: 1px solid var(--border-color);
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -750,6 +750,6 @@ pre.code {
 	justify-content: space-between;
 }
 
-*[data-panel-window] .panel-title span:last-child {
+*[data-sidebar-window] .sidebar-title span:last-child {
 	cursor: pointer;
 }
