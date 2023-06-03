@@ -84,7 +84,8 @@ full version
 
 헤더를 표시한다.
 
-- `<header class="in">` : 아이콘
+- `<header class="in">` : 아이콘(로그인 표시용)
+- `<header class="sticky">` : 화면 고정
 
 ``` html
 <header>

@@ -18,6 +18,8 @@ window.onload = () => {
             
             const container = document.createElement('div');
             container.className = 'modal-container';
+            
+            
 
             const modal_header = document.createElement('div');
             modal_header.textContent = modal_window.dataset['modalTitle'];
@@ -36,18 +38,37 @@ window.onload = () => {
 
             modal_window.style.display = 'flex';
 
+            setTimeout(() => {
+                modal_window.style.opacity = 1;
+                container.style.marginTop = '20px';
+                container.style.opacity = 1;    
+            }, 50);
 
 
             const modal_ok = document.querySelector('*[data-modal-ok=' + name);
             modal_ok.addEventListener('click', function() {
-                modal_window.innerHTML = modal_content.innerHTML;
-                modal_window.style.display = 'none';
+                modal_window.style.opacity = 0;
+                container.style.marginTop = '-500px';
+                container.style.opacity = 0;    
+
+                setTimeout(() => {
+                    modal_window.innerHTML = modal_content.innerHTML;
+                    modal_window.style.display = 'none';
+                }, 500);
+                
             });
 
             const modal_cancel = document.querySelector('*[data-modal-cancel=' + name);
             modal_cancel.addEventListener('click', function() {
-                modal_window.innerHTML = modal_content.innerHTML;
-                modal_window.style.display = 'none';
+
+                modal_window.style.opacity = 0;
+                container.style.marginTop = '-500px';
+                container.style.opacity = 0;    
+
+                setTimeout(() => {
+                    modal_window.innerHTML = modal_content.innerHTML;
+                    modal_window.style.display = 'none';
+                }, 500);
             });
 
 

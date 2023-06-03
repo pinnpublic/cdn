@@ -113,6 +113,12 @@ body > header {
 	justify-content: space-between;
 	border-bottom: 5px solid var(--border-color);
 	min-height: 74px;
+	background-color: #FFF;
+}
+
+body > header.sticky {
+	position: sticky;
+	top: 0;
 }
 
 body > header > h1 {
@@ -671,16 +677,20 @@ pre.code {
 	width: 100%;
 	min-height: 100vh;
 	z-index: 100;
+	opacity: 0;
+	transition: 500ms all;
 }
 
 *[data-modal-window] .modal-container {
 	border-radius: 5px;
 	padding: 1rem;
 	padding-bottom: .5rem;
-	margin-top: 20px;
+	margin-top: -500px;
+	opacity: 0;
 	width: 500px;
 	background-color: #FFF;
 	margin-right: 2rem;
+	transition: 500ms all;
 }
 
 *[data-modal-size=content] .modal-container {
