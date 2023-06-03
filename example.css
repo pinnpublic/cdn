@@ -108,6 +108,44 @@ h1.page::before {
 }
 
 
+body > header {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 5px solid var(--border-color);
+	min-height: 74px;
+}
+
+body > header > h1 {
+	font-size: 1.2rem;
+	border: 0;
+}
+
+body > header.in > h1::before {
+	font-family: var(--icon-font);
+  	content: '\e332‥';
+  	margin-right: 3px;
+  	float: left;
+	font-size: 2rem;
+}
+
+
+body > header > ul {
+	list-style-type: none;
+	display: flex;
+	align-items: flex-end;
+	margin-right: 10px;
+}
+
+body > header > ul > li {
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+body > header > ul > li > a {
+	cursor: pointer;
+}
+
+
 form {
 	display: block;
 }
