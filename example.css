@@ -544,15 +544,22 @@ hr {
 }
 
 .badge.red {
-	text-shadow: 0 0 7px tomato;
+	border-radius: 50%;
+	padding: 2px 5px;
+	background-color: rgb(255, 99, 71, .3);
 }
 
 .badge.yellow {
-	text-shadow: 0 0 7px gold;
+	
+	border-radius: 50%;
+	padding: 2px 5px;
+	background-color: rgb(255, 215, 0, .5);
 }
 
 .badge.blue {
-	text-shadow: 0 0 7px cornflowerblue;
+	border-radius: 50%;
+	padding: 2px 5px;
+	background-color: rgb(100, 149, 237, .3);
 }
 
 label + label {
