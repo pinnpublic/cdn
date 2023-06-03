@@ -384,7 +384,7 @@ full version
 </div>
 
 <div data-sidebar-window="sidebar" data-sidebar-title="Lorem ipsum">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, cum minus. Enim aperiam molestiae, esse eum ea repellendus ut, quis vel hic ducimus amet cumque doloremque. Similique qui error fugit.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
 </div>
 ```
 
