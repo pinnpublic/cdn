@@ -524,11 +524,11 @@ hr {
 }
 
 .message.short {
-	width: 300px;
+	max-width: 250px;
 }
 
 .message.long {
-	width: 500px;
+	max-width: 500px;
 }
 
 .badge {
