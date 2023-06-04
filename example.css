@@ -468,6 +468,10 @@ table.vertical td {
 	padding-left: 10px;
 }
 
+table.content td, table.content th {
+	width: auto;
+}
+
 body.narrow table.vertical th {
 	width: 100px;
 }
