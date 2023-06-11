@@ -114,6 +114,9 @@ body > header {
 	border-bottom: 5px solid var(--border-color);
 	min-height: 74px;
 	background-color: #FFF;
+	position: relative;
+	left: 0;
+	top: 0;
 }
 
 body > header.sticky {
@@ -150,6 +153,15 @@ body > header > ul > li {
 
 body > header > ul > li > a {
 	cursor: pointer;
+}
+
+body > header > ul+ul {
+	position: absolute;
+	right: 0;
+	bottom: -46px;
+	padding: 0;
+	background-color: #FFF;
+	font-size: 14px;
 }
 
 
