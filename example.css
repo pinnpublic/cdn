@@ -434,6 +434,16 @@ button.sidebar-right::before {
 }
 
 
+button.setting::before {
+	font-family: var(--icon-font);
+  	content: '\e8b8';
+	position: absolute;
+	left: 11px;
+	top: 4px;
+	font-size: 1.25rem;
+}
+
+
 
 
 button::before {
