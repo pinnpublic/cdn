@@ -91,9 +91,9 @@ full version
 <header>
     <h1>Title</h1>
     <ul> <!-- 메인 메뉴 -->
-        <li><a hrerf="">menu</a></li>
-        <li><a hrerf="">menu</a></li>
-        <li><a hrerf="">menu</a></li>
+        <li><a href="">menu</a></li>
+        <li><a href="">menu</a></li>
+        <li><a href="">menu</a></li>
         <li>menu</li>
         <li>menu</li>
     </ul>
