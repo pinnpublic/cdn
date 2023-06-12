@@ -90,12 +90,30 @@ full version
 ``` html
 <header>
     <h1>Title</h1>
-    <ul>
+    <ul> <!-- 메인 메뉴 -->
         <li><a hrerf="">menu</a></li>
         <li><a hrerf="">menu</a></li>
         <li><a hrerf="">menu</a></li>
         <li>menu</li>
         <li>menu</li>
+    </ul>
+</header>
+```
+
+``` html
+<header>
+    <h1>Title</h1>
+    <ul> <!-- 메인 메뉴 -->
+        <li><a hrerf="">menu</a></li>
+        <li><a hrerf="">menu</a></li>
+        <li><a hrerf="">menu</a></li>
+        <li>menu</li>
+        <li>menu</li>
+    </ul>
+    <ul> <!-- 서브 메뉴 -->
+        <li><a hrerf="">sub</a></li>
+        <li><a hrerf="">sub</a></li>
+        <li>sub</li>
     </ul>
 </header>
 ```
