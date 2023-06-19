@@ -38,10 +38,6 @@ full version
 
 ## Usage
 
-<span class="material-symbols-outlined">
-settings
-</span>
-
 ### Basic
 
 - 구글 아이콘 기본 적용(https://fonts.google.com/icons)
