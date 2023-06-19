@@ -76,9 +76,9 @@ body > div, body > main > div {
 h1 { font-size: 2rem; border-bottom: 1px solid var(--border-color); }
 h1 small { font-size: 1.2rem; color: var(--sub-text-color); }
 h2 { font-size: 1.5rem; border-bottom: 1px dashed var(--border-color); }
-h2 small { font-size: 1.1rem; color: --sub-text-color; }
+h2 small { font-size: 1.1rem; color: var(--sub-text-color); }
 h3 { font-size: 1.2rem; }
-h3 small { font-size: 1rem; color: --sub-text-color; }
+h3 small { font-size: 1rem; color: var(--sub-text-color); }
 
 
 
@@ -107,6 +107,17 @@ h1.page::before {
 	font-size: 2.5rem;
 }
 
+h1 > span.material-symbols-outlined {
+	font-size: 2.5rem;
+	font-weight: bold;
+	transform: translate(2px, 10px);
+}
+
+h2 > span.material-symbols-outlined {
+	font-size: 2rem;
+	font-weight: bold;
+	transform: translate(2px, 8px);
+}
 
 body > header {
 	display: flex;
@@ -162,6 +173,14 @@ body > header > ul+ul {
 	padding: 0;
 	background-color: #FFF;
 	font-size: 14px;
+}
+
+body > header > ul > li.divider::before {
+  	content: 'ı';
+	font-size: 1rem;
+	color: var(--border-color);
+	margin: 0;
+	padding: 0;
 }
 
 
